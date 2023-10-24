@@ -3,4 +3,9 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-createApp(App).use(store).use(router).mount("#app");
+const vueApp = createApp(App);
+vueApp.use(store).use(router).mount("#app");
+
+vueApp.directive("background-color", (el, binding) => {
+  el.style.backgroundColor = binding.value;
+});
