@@ -38,6 +38,7 @@ const emits = defineEmits(["delete", "completed"]);
   padding: 10px 20px;
   margin: 4px;
   border-radius: 8px;
+  height: fit-content;
   color: white;
   overflow: hidden;
   position: relative;

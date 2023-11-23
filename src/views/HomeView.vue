@@ -50,25 +50,30 @@ const saveToLocal = () => {
 };
 </script>
 
-<style lang="scss" scoped>
-.container {
-  max-height: 430px;
-  overflow: auto;
-  &::-webkit-scrollbar {
-    width: 1em;
-    margin: 2px;
-  }
-  &::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #e2e2e2;
-    outline: 1px solid #e2e2e2;
-  }
-  .show-todos {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+<style lang="scss">
+.home {
+  background-color: #0b2239;
+  height: calc(100vh - 78px);
+  .container {
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 1em;
+      margin: 2px;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #0b2239;
+      outline: 1px solid #0b2239;
+    }
+    .show-todos {
+      min-height: 58vh;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      background-color: #0b2239;
+    }
   }
 }
 </style>

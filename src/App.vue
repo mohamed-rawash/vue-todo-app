@@ -18,6 +18,7 @@ import NavBarComponent from "@/components/NavBarComponent.vue";
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #0b2239;
   margin: 0;
   padding: 0;
 }
